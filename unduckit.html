@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UnDuckIt Configuration</title>
+    <style>
+        body {
+            width: 300px;
+            padding: 10px;
+        }
+        input[type="text"] {
+            width: calc(100% - 22px);
+            margin-bottom: 10px;
+        }
+        button {
+            width: calc(100% - 22px);
+        }
+    </style>
+</head>
+<body>
+    <h3>Enter URL Pattern:</h3>
+    <input type="text" id="urlPattern" placeholder="e.g., https://example.com/*">
+    <button id="save">Save</button>
+
+    <script src="popup.js"></script>
+</body>
+</html>

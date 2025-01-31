@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "UnDuckIt",
+  "version": "1.0",
+  "description": "Modifies the rows attribute of textareas within specific divs on a webpage.",
+  "action": {
+    "default_popup": "unduckit.html",
+    "default_icon": "duckhunt.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"], 
+      "js": ["content.js"]
+    }
+  ]
+}
